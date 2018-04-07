@@ -15,6 +15,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	</head>
 	<body>
@@ -22,17 +23,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7">
-						<img class="header-img" src="img/main-img.png" alt="компуктер">
+						<img class="header-img wow fadeInLeftBig" src="img/main-img.png" alt="компуктер">
 					</div>
 					<div class="col-lg-5">
-						<p class="header-p">Веб разработчик</p>
-						<h1 class="header-title">Гущин Валерий</h1>
-						<p class="subtitle">Верстка на HTML/CSS<br>
+						<p class="header-p wow fadeInRightBig" data-wow-delay="0.1s">Веб разработчик</p>
+						<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Гущин Валерий</h1>
+						<p class="subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS<br>
 							Разработка сайтов под ключ
 						</p>
-						<div class="header-button-block">
+						<div class="header-button-block wow fadeInRightBig">
 							<a href="https://vk.me/riverside" class="header-button">Связаться</a>
-							<small>*это бесплатно</small>
+							<small >*это бесплатно</small>
 						</div>
 					</div>
 				</div>
@@ -41,7 +42,7 @@
 		<section class="portfolio">
 			
 			<div class="container">
-				<div class="portfolio-block">
+				<div class="portfolio-block wow fadeIn">
 					<h2 class="portfolio-title">
 					Портфолио
 					</h2>
@@ -77,10 +78,10 @@
 					<div class="col-md-4">
 						<div class="social-block">
 							<p>Подпишитесь:</p>
-							<a href="#"><img src="img/socials/facebook-logo-button.png" alt="группа в фейсбук"></a>
-							<a href="#"><img src="img/socials/vk-social-logotype.png" alt="Группа в ВК"></a>
-							<a href="#"><img src="img/socials/telegram-symbol.png" alt="Канал телеграм"></a>
-							<a href="#"><img src="img/socials/youtube-symbol.png" alt="Канал на ютуб"></a>
+							<a class="wow bounceInDown" data-wow-delay="0.1s" href="#"><img src="img/socials/facebook-logo-button.png" alt="группа в фейсбук"></a>
+							<a class="wow bounceInDown" data-wow-delay="0.2s" href="#"><img src="img/socials/vk-social-logotype.png" alt="Группа в ВК"></a>
+							<a class="wow bounceInDown" data-wow-delay="0.3s" href="#"><img src="img/socials/telegram-symbol.png" alt="Канал телеграм"></a>
+							<a  class="wow bounceInDown" data-wow-delay="0.4s" href="#"><img src="img/socials/youtube-symbol.png" alt="Канал на ютуб"></a>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -92,6 +93,9 @@
 				</div>
 			</div>
 		</footer>
-		
+		<script src="js/wow.min.js" type="text/javascript"></script>
+		<script>
+			new WOW().init();
+		</script>
 	</body>
 </html>
